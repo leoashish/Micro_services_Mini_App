@@ -7,4 +7,4 @@ These are the five parts of the Microservices
 4. Query
 5. Events (Event Bus)
 
-To run this Microservice. Go to each folder and run `npm i` to install all the dependencies and then run each app using  `npm start`. There is actually a bug in this App I am trying to find it out.
+To run this Microservice. Go to each folder and run `npm i` to install all the dependencies and then run each app using  `npm start`. Bug is figured out. Now I wanted to implement a new service which is comment moderation. That is what I am going to do in the next week.
