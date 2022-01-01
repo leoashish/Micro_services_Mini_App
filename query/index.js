@@ -1,6 +1,6 @@
 const express = require("express"); 
 const bodyParser = require("body-parser");
-const cors = require("cors"); 
+const cors = require("cors");
 
 const app = express(); 
 app.use(bodyParser.json()); 
@@ -13,7 +13,7 @@ app.get("/posts" , (req , res) => {
 }); 
 
 
-app.get("/events" ,(req ,res) => {
+app.post("/events" ,(req ,res) => {
     const {type , data} = req.body ; 
 
     if(type === "PostCreated")
@@ -25,13 +25,11 @@ app.get("/events" ,(req ,res) => {
 
     if(type === "CommentCreated")
     {
-        const{ id , postId , content} = data; 
-        const post = posts[postId]; 
-        post.comments.push({ id , content}); 
-
         
-    }
+        const{ id , content , postId} = data; 
+        posts[postId].comments.push({id , content});
 
+    }
     console.log(posts);
     res.send({});
 }); 
