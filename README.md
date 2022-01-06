@@ -6,5 +6,6 @@ These are the five parts of the Microservices
 3. Comments
 4. Query
 5. Events (Event Bus)
+6. Comment Moderation
 
-To run this Microservice. Go to each folder and run `npm i` to install all the dependencies and then run each app using  `npm start`. Bug is figured out. Now I wanted to implement a new service which is comment moderation. That is what I am going to do in the next week.
+To run this Microservice. Go to each folder and run `npm i` to install all the dependencies and then run each app using  `npm start`. Bug is figured out. Moderation is now complete.It will moderate every comment that contains the keyword "Orange".App is right now complete.
